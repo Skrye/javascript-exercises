@@ -4,8 +4,6 @@ function removeFromArray(array, ...elements) {
         let index = array.indexOf(element);
         if (index > -1) {
           array.splice(index, 1);
-        } else if (index = -1) {
-          return array;
         }
     }
     return array;
