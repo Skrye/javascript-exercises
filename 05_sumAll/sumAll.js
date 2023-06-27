@@ -1,11 +1,15 @@
 function sumAll(intOne, intTwo) {
-    let max = Math.max(intOne, intTwo);
-    let min = Math.min(intOne, intTwo);
-    let sumBetween = 0;
-    for (let i = min; i <= max; i++) {
-        sumBetween += i;
+    if ((intOne >= -1 && intTwo >= -1) && (typeof intOne === "number" && typeof intTwo === "number")) {
+        let max = Math.max(intOne, intTwo);
+        let min = Math.min(intOne, intTwo);
+        let sumBetween = 0;
+        for (let i = min; i <= max; i++) {
+            sumBetween += i;
+        }
+        return sumBetween;
+    } else {
+        return "ERROR";
     }
-    return sumBetween;
 };
 
 // Do not edit below this line
